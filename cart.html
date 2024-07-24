@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+    <title>E-Commerce Website</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg  bg-primary-subtle sticky-lg-top">
+    <div class="container">
+        <!-- <header class="border bg-light  p-3"> -->
+            <div class="row">
+                <img class="logo p-md-1" src="./img/logo.png" alt="Logo"></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse  justify-content-md-end p-md-1 " id="collapsibleNavbar">
+                    <ul class="navbar-nav nav nav-pills d-flex justify-content-md-between  w-50 fs-6">
+                   
+                    <!-- <ul class="navbar-nav nav nav-pills nav-justified"> -->
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="shop.html">SHOP</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                      </li>  
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>  
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+                        </li>      
+                    </ul>
+                  </div>
+                <!-- <nav class="col-md-10">
+                    <ul class="row mt-2 fw-medium fs-5 text-center">
+                        <li class="col-md-2"><a class="text-decoration-none text-black " href="home.html">HOME</a></li>
+                        <li class="col-md-2"><a class="text-decoration-none text-black " href="shop.html">SHOP</a></li>
+                        <li class="col-md-2"><a class="text-decoration-none text-black " href="blog.html">BLOG</a></li>
+                        <li class="col-md-2"><a class="text-decoration-none text-black " href="about.html">ABOUT</a></li>
+                        <li class="col-md-2"><a class="text-decoration-none text-black " href="contact.html">CONTACT</a></li>
+                        <li class="col-md-2"><a class="text-decoration-none text-black " href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+                    </ul>
+                </nav> -->
+            </div>
+    </div>
+
+</nav>
+<section class="about-header page-header mb-5 text-light">
+    <h2>#Cart</h2>
+    <p>Add your coupon code & SAVE upto 70%</p>
+</section>
+
+<section class="cart-item  container">
+    <div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr> 
+                <th>REMOVE</th>
+                <th>IMAGE</th>
+                <th>PRODUCT</th>
+                <th>PRICE</th>
+                <th>QUANTITY</th>
+                <th>SUBTOTAL</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+                <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+                <td><img src="./img/products/f1.jpg" class="img-fluid" alt="" style="max-width: 100px;"></td>
+                <td>Cartoon Astronaut T-shirts</td>
+                <td>$118.19</td>
+                <td><input type="number" value="1" class="form-control"  style="max-width: 100px;"></td>
+                <td>$118.19</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+                <td><img src="./img/products/f2.jpg" class="img-fluid" alt="" style="max-width: 100px;"></td>
+                <td>Cartoon Astronaut T-shirts</td>
+                <td>$118.19</td>
+                <td><input type="number" value="1" class="form-control"  style="max-width: 100px;"></td>
+                <td>$118.19</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+                <td><img src="./img/products/f3.jpg" class="img-fluid" alt="" style="max-width: 100px;"></td>
+                <td>Cartoon Astronaut T-shirts</td>
+                <td>$118.19</td>
+                <td><input type="number" value="1" class="form-control" style="max-width: 100px;"></td>
+                <td>$118.19</td>
+            </tr>
+         </tbody>
+    </table>
+</div>
+</section>
+
+
+<section id="add-coupon">
+    <div class="row container my-5 p-4 mx-auto">
+        <div class="coupon col-md-6 col-sm-12 ">
+            <h4>Apply Coupon</h4>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button>Apply</button>
+        </div>
+
+        <div class="cart-total col-md-6 border p-5 col-sm-12">
+            <h4>Cart Totals</h4>
+            <table class="table table-bordered my-3">
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <th>Total</th>
+                    <th>$335</th>
+                </tr>
+            </table>
+            <button>Proceed to checkout </button>
+        </div>
+    </div>
+</section>
+
+<footer class="container my-5">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 contact text-light-emphasis"> 
+            <img src="./img/logo.png" class="mb-4">
+            <h5 class="mb-3 text-dark fw-bold">Contact</h5>
+            <p class="mb-1 text-start"><b>Adress:</b>Anandpuram Phase-2 Kohka</p>
+            <p class="mb-1  text-start"><b>Phone:</b>+91 637462222/(+91)38237283</p>
+            <p class="mb-3  text-start"><b>Hours:</b>10:00-18:00, Mon-Fri</p>
+            <h5>Follow Us</h5>
+            <div class="icon mt-4">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+            <h5>About</h5>
+            <ul class="list-unstyled mt-3">
+                <li><a class="text-decoration-none text-light-emphasis" href="#">About Us</a></li>
+                <li> <a class="text-decoration-none  text-light-emphasis" href="#">Delivery Information</a></li>
+                <li> <a class="text-decoration-none  text-light-emphasis" href="#">Privacy Policy</a></li>
+                <li><a class="text-decoration-none  text-light-emphasis" href="#">Terms & Conditions</a></li>
+                <li><a class="text-decoration-none  text-light-emphasis" href="#">Contact Us</a></li>
+                </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+            <h5>My Account</h5>
+            <ul class="list-unstyled mt-3">
+                <li><a class="text-decoration-none text-light-emphasis" href="#">Sign In</a></li>
+                <li> <a class="text-decoration-none  text-light-emphasis" href="#">View Cart</a></li>
+                <li> <a class="text-decoration-none  text-light-emphasis" href="#">My Wishlist</a></li>
+                <li><a class="text-decoration-none  text-light-emphasis" href="#">Track My Order</a></li>
+                <li><a class="text-decoration-none  text-light-emphasis" href="#">help</a></li>
+                </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 my-md-4 install-app">
+            <h5>Install App</h5>
+            <p class="mt-3 text-light-emphasis">From App Store Or Google Play</p>
+            <div class="install-app d-flex justify-content-between">
+                <div class="for-apple rounded mx-1"></div>
+                <div class="for-google rounded "></div>
+            </div>
+            <p class="my-3 fw-lighter text-light-emphasis">Secured Payment Gateways</p>
+            <img src="./img/pay/pay.png">
+        </div>
+    </div>
+    <div class="copyright container my-5 text-lg-center text-md-start  ">
+        @2024-HTML & CSS E-Commerce Template
+    </div>
+</footer>
+
+<script src=""></script>
+</body>
+</html>

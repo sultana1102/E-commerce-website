@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+*
+{
+    /* margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; */
+    /* font-family: spartan; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav ul
+{
+    list-style: none;
+}
+.nav-link:hover,
+.nav-link.active
+    {
+        color:white !important;
+        background-color: rgb(58, 53, 53) !important;
+    }
+  /* Add custom underline with margin for all navbar links */
+.nav-link {
+    position: relative;
+    padding-bottom: 5px; /* Adjust the space between text and underline */
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    height: 4px; /* Adjust the thickness of the underline */
+    background-color: rgb(47, 255, 61); /* Change to your desired underline color */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+    margin-left: 7px;
+  }
+  
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    height: 4px; /* Adjust the thickness of the underline */
+    background-color: rgb(249, 171, 171); /* Change to your desired active underline color */
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .home
+  {
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url("./img/hero4.png");
+    background-position: top 30% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.home h2
+{
+    font-size: 42px;
+    font-weight: bolder;
+}
+.home h1
+{
+    font-size: 46px;
+}
+  .home button
+  {
+    background-image: url(./img/button.png);
+    background-color: transparent;
+    padding: 10px 80px 10px 70px;
+    background-repeat: no-repeat;
+  }
+  .letter-spacing
+  {
+    letter-spacing:3px;
+  }
+  #feature
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #feature .feature-box
+  {
+    padding: 25px 15px;
+    text-align: center;
+    width: 180px;
+    box-shadow: 10px 10px 34px rgb(242, 205, 205);
+    border: 1px solid rgb(179, 146, 146);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #feature .feature-box:hover
+  {
+    box-shadow: 10px 10px 34px rgb(217, 185, 217);
+  }
+  #feature .feature-box img
+  {
+        width: 100%;
+        margin-bottom: 15px;
+  }
+  #feature .feature-box h6
+  {
+    background-color: #fddde4;
+    border-radius: 4px;
+    padding: 6px;
+    display: inline-block;
+  }
+  #feature .feature-box:nth-child(2) h6
+  {
+    background-color:#cdebbc ;
+  }
+  #feature .feature-box:nth-child(3) h6
+  {
+    background-color:#d1e8f2 ;
+  }
+  #feature .feature-box:nth-child(4) h6
+  {
+    background-color:#cdd4f8 ;
+  }
+  #feature .feature-box:nth-child(5) h6
+  {
+    background-color:#f6dbf6 ;
+  }
+  #feature .feature-box:nth-child(6) h6
+  {
+    background-color:#fff2e5 ;
+  }
+  .Products h1, p
+  {
+    text-align:center;
+  }
+  .small-banner p
+  {
+    text-align: start;
+  }
+  
+  .product-box
+  {
+    width: 23%;
+    min-width: 250px;
+    border: 1px solid rgb(210, 201, 201);
+    padding: 10px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(222, 128, 128, 0.222);
+    margin: 15px 0;
+    transition: 0.2s ease;
+  }
+  .product-box img
+  {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .product-box:hover
+  {
+    box-shadow: 20px 20px 30px rgba(128, 222, 221, 0.222);
+  }
+  .checked {
+    color: orange;
+  }
+  .banner
+  {
+    background-image: url(img/banner/b2.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+  }
+  .banner button:hover
+  {
+    background-color: rgb(49, 125, 49);
+    color: white;
+  }
+  .small-banner .banner-box
+  {
+    width: 48%;
+    background-image: url(./img/banner/b17.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+  }
+  .small-banner .banner-box2
+  {
+    background-image: url(./img/banner/b10.jpg);
+  }
+  .banner-box button
+  {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid  rgb(230, 230, 230);
+    color:white;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  .banner-box:hover button
+  {
+    background-color: rgb(49, 125, 49);
+    border: 1px solid rgb(49, 125, 49);
+  }
+  .category-banner .banner-box
+  {
+    width: 30%;
+    height: 30vh;
+    background-image: url(./img/banner/b7.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .category-banner .banner-box2
+  {
+    width: 36%;
+    background-image: url(./img/banner/b4.jpg);
+  }
+  .category-banner .banner-box3
+  {
+    width: 30%;
+    background-image: url(./img/banner/b18.jpg);
+  }
+  .newsletters
+  {
+    background-color: rgba(34, 34, 72, 0.911);
+    width: 100%;
+    height: 30vh;
+  }
+  .install-app .for-apple,
+  .install-app .for-google
+  {
+    border: 1px solid rgb(49, 125, 49);
+    background-image: url(./img/pay/app.jpg);
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 6vh;
+  }
+  .install-app .for-google
+  {
+    background-image: url(./img/pay/play.jpg);
+  }
+  .icon i
+  {
+    cursor: pointer;
+  }
+  .icon i:hover,
+  footer a:hover
+  {
+    color: rgb(17, 108, 17);
+  }
+  /* -------------------shop page------------------*/
+
+   .page-header
+  {
+    background-image: url(./img/banner/b1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 14px;
+  }
+.pegination a
+{
+  text-decoration: none;
+  background-color: rgb(49, 125, 49) ;
+  color: #fff;
+  padding:15px 20px ;
+  border-radius: 4px;
+  font-weight:bold;
+  margin: 15px;
+}
+
+ /* -------------------single-product-detail------------------*/
+ .product-detail .single-product-img
+ {
+    width: 40%;
+ }
+ .small-img-col
+ {
+    cursor: pointer;
+ }
+ .single-product-description input
+ {
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 6px 5px;
+ }
+ .single-product-description input:focus
+ {
+    outline: none;
+ }
+ .para-line
+ {
+    line-height: 30px;
+ }
+ /* -------------------blog page------------------*/
+
+.blog-header
+{
+  background-image: url(./img/banner/b19.jpg);
+  
+}
+#blog h1
+{
+    font-size: 64px;
+    margin-left: 152px;
+    color:rgb(196, 194, 194);
+}
+#blog .blog-img img
+{
+  width: 100%;
+  height: 320px;
+  margin: -30px 150px 50px 150px;
+}
+.blog-details
+{
+    margin:0 180px 0 200px;
+    
+}
+.blog-details a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight:700;
+    position: relative;
+    transition: 0.5s;
+}
+.blog-details a::after
+{
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    right: -60px;
+}
+.blog-details a:hover
+{
+    color:  rgb(49, 125, 49);
+}
+.blog-details a:hover::after
+{
+    background-color:  rgb(49, 125, 49);
+}
+/* -------------------About page------------------*/
+
+.about-header
+{
+  background-image: url(./img/about/banner.png);
+  
+}
+#about-us-app .video video
+{
+    width: 60%;
+    height: 100%;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+/* -------------------contact-us page------------------*/
+#contact-details .location-address li
+{
+    list-style: none;
+    display: flex;
+    margin: 15px auto;
+}
+#contact-details .location-address h6,
+#form-details .review-form h6
+{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight:300;
+}
+#contact-details .location-address h5
+{
+    font-size:16px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+#contact-details .location-address i
+{
+    font-size: 14px;
+    padding: 5px 22px 0 0;
+}
+#contact-details .location-address p
+{
+    font-size: 14px;
+    margin: 0;
+    font-weight: 300;
+}
+ .location-map iframe
+{
+    height: 400px;
+    width: 100%;
+}
+#form-details
+{
+    margin: 20px;
+    border: 1px solid rgb(91, 91, 91);
+}
+ .review-form input, textarea
+{
+    width: 100%;
+    padding: 6px 20px ;
+}
+.review-form
+{
+    margin: 20px 70px;
+    padding:30px 0;
+}
+.review-form button,
+.cart-total button,
+.coupon button
+{
+    background-color: rgb(49, 125, 49);
+    color: white;
+    padding: 8px 25px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid  rgb(230, 230, 230);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.people-info p
+{
+    font-size: 14px;
+    font-weight:300;
+    text-align: start;
+    margin: 5px auto;
+}
+
+/* -------------------Cart page------------------*/
+table thead
+{
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+ td
+{
+    text-transform: uppercase;
+    padding-top: 15px;
+    font-size: 13px;
+    vertical-align: middle;
+}
+.coupon input
+{
+    width: 60%;
+    padding: 6px 25px;
+}
+  /* -------------------responsive for ipad------------------*/
+  @media (max-width:1024px)
+  {
+    .home {
+        height: 70vh;
+        background-position: top 30% right 30%;
+    }
+    .banner {
+        height: 20vh;
+    }
+    .newsletters {
+        height: 20vh;
+    }
+    .pegination
+    {
+        text-align: center;
+    }
+    .single-product-description input
+ {
+    width: 50px;
+    height: 40px; 
+ }
+ #blog h1
+{
+    margin-left: 85px;
+}
+ #blog .blog-img img
+{
+  margin: -30px 80px 50px 80px;
+}
+ #blog .blog-details
+ {
+    margin:0 30px 0 120px;
+ }
+ /* -------------------contact-us page------------------*/
+
+#contact-details .location-address i
+{
+    padding: 5px 10px 0 0;
+}
+.location-map
+{
+    margin-left:25px;
+}
+ .location-map iframe
+{
+    width: 100%;
+    height: 350px;
+}
+#contact-details .location-address p
+{
+    text-align: start;
+}
+.review-form
+{
+    margin: 20px 0 0 10px;
+    padding:20px 0;
+}
+}
+
+/* -------------------responsive for smaller screen/phone------------------*/
+@media (max-width:430px)
+{
+    .home {
+       padding: 0 20px;
+        background-position: 55%;
+    }
+    .home h2
+    {
+        font-size: 32px;
+    }
+    .home h1
+    {
+        font-size: 38px;
+    }
+    #feature .feature-box
+  {
+    width: 160px;
+  }
+  .product-box
+  {
+    width: 100%;
+  }
+  .banner {
+    height: 30vh;
+}
+
+.small-banner .banner-box
+  {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 20px;
+  }
+  .category-banner .banner-box
+  {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 20px;
+  }
+  .newsletters {
+   padding:40px 20px;
+    height: 35vh;
+    
+}
+.pegination a
+{
+   padding:5px 10px ;
+}
+.product-detail .single-product-img
+ {
+    margin: 10px 0 0 0;
+    width: 100%;
+ }
+ #blog h1
+{
+    margin:-20px 0 10px 20px;
+}
+ #blog .blog-img img
+{
+    width: 100%;
+    height: 220px;
+  margin: -30px 15px 20px 15px;
+}
+ #blog .blog-details
+ {
+    width: 98%;
+    margin:0 10px 50px 20px;
+    line-height: 2px;
+ }
+ #about-us .intro-img img
+ {
+    margin-top: -20px;
+ }
+ .introduction .intro-summery
+ {
+    margin-top: 20px;
+ }
+ #about-us-app .video video
+{
+    width: 90%;
+    margin-top: 0;
+}
+/* -------------------contact-us page------------------*/
+.location-map
+{
+    margin-left:10px;
+}
+#add-coupon .cart-total
+{
+    margin-top: 20px;
+}
+.coupon input
+{
+    width: 65%;
+    padding: 6px 15px;
+}
+}

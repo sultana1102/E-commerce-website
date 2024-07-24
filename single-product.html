@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>E-Commerce Website</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg  bg-primary-subtle sticky-lg-top">
+    <div class="container">
+        <!-- <header class="border bg-light  p-3"> -->
+            <div class="row">
+                <img class="logo p-md-1" src="./img/logo.png" alt="Logo"></div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse  justify-content-md-end p-md-1 " id="collapsibleNavbar">
+                    <ul class="navbar-nav nav nav-pills d-flex justify-content-md-between  w-50 fs-6">
+                   
+                    <!-- <ul class="navbar-nav nav nav-pills nav-justified"> -->
+
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="shop.html">SHOP</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                      </li>  
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>  
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="cart.html"><i class="fa fa-shopping-bag"></i></a>
+                        </li>      
+                    </ul>
+                  </div>
+                <!-- <nav class="col-md-10">
+                    <ul class="row mt-2 fw-medium fs-5 text-center">
+                        <li class="col-md-2"><a class="text-decoration-none text-black " href="home.html">HOME</a></li>
+                        <li class="col-md-2"><a class="text-decoration-none text-black " href="shop.html">SHOP</a></li>
+                        <li class="col-md-2"><a class="text-decoration-none text-black " href="blog.html">BLOG</a></li>
+                        <li class="col-md-2"><a class="text-decoration-none text-black " href="about.html">ABOUT</a></li>
+                        <li class="col-md-2"><a class="text-decoration-none text-black " href="contact.html">CONTACT</a></li>
+                        <li class="col-md-2"><a class="text-decoration-none text-black " href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+                    </ul>
+                </nav> -->
+            </div>
+    </div>
+
+</nav>
+
+<section class="product-detail container row">
+    <div class="single-product-img col-lg-4 mx-lg-5 mt-lg-5 px-lg-4  col-md-4 mx-md-3 mt-md-3">
+      
+        <img src="./img/products/f1.jpg" width="100%" id="main-img" alt="">
+        <div class="row  small-img-group my-3">
+                <div class="small-img-col col-3">
+                    <img src="./img/products/f1.jpg" width="100%"  alt="" class="small-img">
+                </div>
+                <div class="small-img-col col-3">
+                    <img src="./img/products/f3.jpg" width="100%"  alt="" class="small-img">
+                </div>
+                <div class="small-img-col col-3">
+                    <img src="./img/products/f4.jpg" width="100%"  alt="" class="small-img">
+                </div>
+                <div class="small-img-col col-3">
+                    <img src="./img/products/f5.jpg" width="100%"  alt="" class="small-img">
+                </div>
+        </div>
+    </div>
+
+    <div class="single-product-description col-lg-6 my-lg-5 pt-lg-3 col-md-6 my-md-2 pt-md-3 px-md-5">
+        <h6 class="my-lg-4 mb-md-2">Home/T-Shirts</h6>
+        <h4>Men's Fashion T-Shirts</h4>
+        <h2 class="mt-lg-3 mb-lg-2">$139.00</h2>
+        <select class="size mb-2 px-lg-2 py-1 px-md-5">
+            <option>Select Size</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option> 
+            <option>XXL</option> 
+        </select>
+        <div class="add-quatity d-flex">
+             <input type="number" value="1">
+             <button class="px-4 text-light text-bg-success border-0 rounded ">Add To Cart</button>
+        </div>
+        <h4 class="mt-4 mb-3">Product Details</h4>
+        <p class="text-start para-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum ipsum fugit modi dolor, eos maxime provident maiores dicta ex, dolore impedit doloremque, laudantium repudiandae ut corrupti adipisci dolores ab.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit officia doloremque rerum beatae quis laboriosam quidem eos eum minus est? Ut sunt incidunt necessitatibus ullam, magnam odio fugiat doloribus temporibus?
+          </p>
+    </div>
+    <!-- <div class="single-product-img">
+            <img src="./img/products/f1.jpg" width="100%" id="main-img" alt="">
+
+            <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="./img/products/f1.jpg" width="100%"  alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./img/products/f2.jpg" width="100%"  alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./img/products/f3.jpg" width="100%"  alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./img/products/f4.jpg" width="100%"  alt="" class="small-img">
+                    </div>
+
+             </div>
+    </div> -->
+
+</section>
+
+<section class="Products container my-md-5">
+    <h1 class="fw-bolder letter-spacing">Featured Products</h1>
+    <p class="fw-light">Summer Collection New Modern Design</p>
+    <div class="product-collection d-flex justify-content-lg-between justify-content-sm-center flex-wrap">
+   
+        <div class="product-box mt-lg-5  mx-md-auto">
+             <img src="./img/products/n1.jpg">
+                <div class="caption mx-2 my-1 p-1">
+                    <span class="brand text-light-emphasis">Adidas</span>
+                      <h6 class="m-0"> Cartoon Astronaut T-Shirts</h6>
+    
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="price-cart d-flex justify-content-between align-items-center mt-0 ">
+                                    <h5 class="price text-success m-0">$78</h5>
+                                    <a class="add-to-cart text-success" href="#"><i class="fa fa-shopping-cart fs-2"></i></a>
+                            </div>
+                 </div>  
+        </div>
+
+        <div class="product-box mt-lg-5  mx-md-auto">
+            <img src="./img/products/n2.jpg">
+               <div class="caption mx-2 my-1 p-1">
+                   <span class="brand text-light-emphasis">Adidas</span>
+                     <h6 class="m-0"> Cartoon Astronaut T-Shirts</h6>
+   
+                           <div class="rating">
+                               <span class="fa fa-star checked"></span>
+                               <span class="fa fa-star checked"></span>
+                               <span class="fa fa-star checked"></span>
+                               <span class="fa fa-star"></span>
+                               <span class="fa fa-star"></span>
+                           </div>
+                           <div class="price-cart d-flex justify-content-between align-items-center mt-0 ">
+                                   <h5 class="price text-success m-0">$78</h5>
+                                   <a class="add-to-cart text-success" href="#"><i class="fa fa-shopping-cart fs-2"></i></a>
+                           </div>
+                </div>  
+       </div>
+
+       <div class="product-box mt-lg-5  mx-md-auto">
+        <img src="./img/products/n3.jpg">
+           <div class="caption mx-2 my-1 p-1">
+               <span class="brand text-light-emphasis">Adidas</span>
+                 <h6 class="m-0"> Cartoon Astronaut T-Shirts</h6>
+
+                       <div class="rating">
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star checked"></span>
+                           <span class="fa fa-star"></span>
+                           <span class="fa fa-star"></span>
+                       </div>
+                       <div class="price-cart d-flex justify-content-between align-items-center mt-0 ">
+                               <h5 class="price text-success m-0">$78</h5>
+                               <a class="add-to-cart text-success" href="#"><i class="fa fa-shopping-cart fs-2"></i></a>
+                       </div>
+            </div>  
+   </div>
+
+   <div class="product-box mt-lg-5  mx-md-auto">
+    <img src="./img/products/n4.jpg">
+       <div class="caption mx-2 my-1 p-1">
+           <span class="brand text-light-emphasis">Adidas</span>
+             <h6 class="m-0"> Cartoon Astronaut T-Shirts</h6>
+
+                   <div class="rating">
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star"></span>
+                       <span class="fa fa-star"></span>
+                   </div>
+                   <div class="price-cart d-flex justify-content-between align-items-center mt-0 ">
+                           <h5 class="price text-success m-0">$78</h5>
+                           <a class="add-to-cart text-success" href="#"><i class="fa fa-shopping-cart fs-2"></i></a>
+                   </div>
+        </div>  
+</div>
+
+
+
+
+
+
+</div>
+</section>
+
+<section class="newsletters my-md-5 d-flex justify-content-lg-between ">
+    <div class="newsletters-caption m-lg-5 px-lg-4 w-50">
+        <h3 class="text-white mt-lg-4 mt-sm-5 mx-sm-5">Sign Up For Newsletters</h3>
+        <p class="text-white-50 text-start mx-sm-5">Get E-mail updates about our latest shop and <span class="text-warning">spacial offers.</span></p>
+    </div>
+    <div class="signup-form my-lg-5 my-sm-4 w-50">
+        <input type="text" placeholder="Your email address" class=" py-lg-2 mt-5 rounded border-0 w-75 fw-lighter text-center">
+        <span><button class=" py-lg-2 mt-lg-2 text-white bg-success border-0 rounded fw-bolder">Sign Up</button></span>
+    </div>
+</section> 
+
+<footer class="container my-5">
+    <div class="row">
+        <div class="col-lg-3 col-md-4 contact text-light-emphasis"> 
+            <img src="./img/logo.png" class="mb-4">
+            <h5 class="mb-3 text-dark fw-bold">Contact</h5>
+            <p class="mb-1 text-start"><b>Adress:</b>Anandpuram Phase-2 Kohka</p>
+            <p class="mb-1  text-start"><b>Phone:</b>+91 637462222/(+91)38237283</p>
+            <p class="mb-3  text-start"><b>Hours:</b>10:00-18:00, Mon-Fri</p>
+            <h5>Follow Us</h5>
+            <div class="icon mt-4">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-pinterest"></i>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+            <h5>About</h5>
+            <ul class="list-unstyled mt-3">
+                <li><a class="text-decoration-none text-light-emphasis" href="#">About Us</a></li>
+                <li> <a class="text-decoration-none  text-light-emphasis" href="#">Delivery Information</a></li>
+                <li> <a class="text-decoration-none  text-light-emphasis" href="#">Privacy Policy</a></li>
+                <li><a class="text-decoration-none  text-light-emphasis" href="#">Terms & Conditions</a></li>
+                <li><a class="text-decoration-none  text-light-emphasis" href="#">Contact Us</a></li>
+                </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+            <h5>My Account</h5>
+            <ul class="list-unstyled mt-3">
+                <li><a class="text-decoration-none text-light-emphasis" href="#">Sign In</a></li>
+                <li> <a class="text-decoration-none  text-light-emphasis" href="#">View Cart</a></li>
+                <li> <a class="text-decoration-none  text-light-emphasis" href="#">My Wishlist</a></li>
+                <li><a class="text-decoration-none  text-light-emphasis" href="#">Track My Order</a></li>
+                <li><a class="text-decoration-none  text-light-emphasis" href="#">help</a></li>
+                </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 my-md-4 install-app">
+            <h5>Install App</h5>
+            <p class="mt-3 text-light-emphasis">From App Store Or Google Play</p>
+            <div class="install-app d-flex justify-content-between">
+                <div class="for-apple rounded mx-1"></div>
+                <div class="for-google rounded "></div>
+            </div>
+            <p class="my-3 fw-lighter text-light-emphasis">Secured Payment Gateways</p>
+            <img src="./img/pay/pay.png">
+        </div>
+    </div>
+    <div class="copyright container my-5 text-lg-center text-md-start  ">
+        @2024-HTML & CSS E-Commerce Template
+    </div>
+</footer>
+
+<script>
+    var mainImg=document.getElementById("main-img");
+    var smallImg=document.getElementsByClassName("small-img");
+
+    smallImg[0].onclick=function()
+    {
+        mainImg.src=smallImg[0].src;
+    }
+    smallImg[1].onclick=function()
+    {
+        mainImg.src=smallImg[1].src;
+    }
+    smallImg[2].onclick=function()
+    {
+        mainImg.src=smallImg[2].src;
+    }
+    smallImg[3].onclick=function()
+    {
+        mainImg.src=smallImg[3].src;
+    }
+</script>
+
+<script src=""></script>
+</body>
+</html>
